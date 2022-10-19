@@ -12,7 +12,7 @@
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.addressables": "1.20.5",
     "com.unity.inputsystem": "1.4.3",
-    "com.pixygon.tooltip": "0.5.0",
+    "com.pixygon.uitooltip": "0.5.0",
     "com.pixygon.idsystem": "0.5.0",
     "com.pixygon.addressables": "0.5.0",
     "com.pixygon.uibuttoneffects": "0.5.0"
