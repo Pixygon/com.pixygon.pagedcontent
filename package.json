@@ -1,0 +1,31 @@
+{
+  "name": "com.pixygon.pagedcontent",
+  "version": "0.5.0",
+  "displayName": "Pixygon Paged Content",
+  "description": "Paged Content manager for ui and other things, maybe?",
+  "unity": "2022.1",
+  "unityRelease": "20f1",
+  "documentationUrl": "https://www.pixygon.io/dev/micro",
+  "changelogUrl": "https://www.pixygon.io/dev/micro/changelog",
+  "licensesUrl": "https://www.pixygon.io/dev/micro/license",
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.addressables": "1.20.5",
+    "com.unity.inputsystem": "1.4.3",
+    "com.pixygon.tooltip": "0.5.0",
+    "com.pixygon.idsystem": "0.5.0",
+    "com.pixygon.addressables": "0.5.0",
+    "com.pixygon.uibuttoneffects": "0.5.0",
+ },
+"hideInEditor": false,
+ "keywords": [
+    "Pixygon",
+    "Debug",
+    "Tool"
+  ],
+  "author": {
+    "name": "Pixygon",
+    "email": "pixygon@pixygon.io",
+    "url": "https://www.pixygon.io"
+  }
+}
