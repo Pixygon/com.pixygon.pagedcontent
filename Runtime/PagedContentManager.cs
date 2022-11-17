@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Threading.Tasks;
 using TMPro;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 namespace Pixygon.PagedContent {
@@ -84,6 +85,7 @@ namespace Pixygon.PagedContent {
                 _pageContent.Add(g);
                 await Task.Yield();
             }
+            EventSystem.current.SetSelectedGameObject(_pageContent[0]);
             if(_prevButton != null) _prevButton.SetActive(CurrentPage != 0);
             if(_nextButton != null) _nextButton.SetActive(CurrentPage != _totalPages);
         }
