@@ -58,12 +58,14 @@ namespace Pixygon.PagedContent {
         public void PreviousPage() {
             SetPage(CurrentPage - 1);
         }
-        public void PopulateCollections(object[] d, int n, Action<object, int> a, int page = 0, bool nIsItemCount = false) {
+        private bool _rotatingPages;
+        public void PopulateCollections(object[] d, int n, Action<object, int> a, int page = 0, bool nIsItemCount = false, bool rotatingPages = false) {
             ClearPage();
             _action = a;
             _number = n;
             _itemDatas = d;
             _nIsItemCount = nIsItemCount;
+            _rotatingPages = rotatingPages;
             if(d == null) return;
             if(d.Length == 0) return;
             SetPage(page);
@@ -86,8 +88,8 @@ namespace Pixygon.PagedContent {
                 await Task.Yield();
             }
             EventSystem.current.SetSelectedGameObject(_pageContent[0]);
-            if(_prevButton != null) _prevButton.SetActive(CurrentPage != 0);
-            if(_nextButton != null) _nextButton.SetActive(CurrentPage != _totalPages);
+            if(_prevButton != null && !_rotatingPages) _prevButton.SetActive(CurrentPage != 0);
+            if(_nextButton != null && !_rotatingPages) _nextButton.SetActive(CurrentPage != _totalPages);
         }
         public void ClearPage() {
             if(_pageContent != null) {
