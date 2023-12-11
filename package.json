@@ -9,7 +9,6 @@
   "changelogUrl": "https://www.pixygon.io/dev/micro/changelog",
   "licensesUrl": "https://www.pixygon.io/dev/micro/license",
   "dependencies": {
-    "com.unity.textmeshpro": "3.0.6",
     "com.unity.addressables": "1.20.5",
     "com.unity.inputsystem": "1.4.3",
     "com.pixygon.uitooltip": "0.5.0",
